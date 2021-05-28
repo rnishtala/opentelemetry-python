@@ -1,46 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622167397707,
+  "lastUpdate": 1622167410682,
   "repoUrl": "https://github.com/rnishtala/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
-      {
-        "commit": {
-          "author": {
-            "email": "rob.knox.dev@gmail.com",
-            "name": "Rob Knox",
-            "username": "robwknox"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "03c6b7391d16236ad5d4e48b0cb0bff786c2e583",
-          "message": "Zipkin exporter add support for v1 api json format (#1411)",
-          "timestamp": "2021-02-17T12:03:29-08:00",
-          "tree_id": "d7a5fe453f77df1d3e7d772741c3e902040de07a",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/03c6b7391d16236ad5d4e48b0cb0bff786c2e583"
-        },
-        "date": 1613592316373,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 32663.665046387803,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00000964659417985952",
-            "extra": "mean: 30.615058003436992 usec\nrounds: 4879"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 22113.490890091034,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000006129595860783475",
-            "extra": "mean: 45.221263570289395 usec\nrounds: 7148"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -3800,6 +3762,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00007455140528442149",
             "extra": "mean: 63.160892574948306 usec\nrounds: 9616"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "5293167+marcosflobo@users.noreply.github.com",
+            "name": "Marcos F. Lobo",
+            "username": "marcosflobo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ecfeb70893845c5083dfe0ba434c110a3df9d6c",
+          "message": "Fix link to instrumentation (#1826)\n\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-05-27T16:00:02-07:00",
+          "tree_id": "6e4654858fec93bb942103e4f0e896742a36c552",
+          "url": "https://github.com/rnishtala/opentelemetry-python/commit/0ecfeb70893845c5083dfe0ba434c110a3df9d6c"
+        },
+        "date": 1622167397581,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 17158.83909955395,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00011542768202722295",
+            "extra": "mean: 58.27900093928822 usec\nrounds: 3194"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 12488.639289276407,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007140266384463346",
+            "extra": "mean: 80.07277469040746 usec\nrounds: 6298"
           }
         ]
       }
