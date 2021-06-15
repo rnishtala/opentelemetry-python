@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1623717805568,
+  "lastUpdate": 1623717810854,
   "repoUrl": "https://github.com/rnishtala/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -41686,44 +41686,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "a046518d21153070da2933d1e987713df0d4a6c3",
-          "message": "move textmap propagators to opentelemetry.propagators (#1662)",
-          "timestamp": "2021-03-02T16:35:40-08:00",
-          "tree_id": "283734047b5ee2a7d6969ef347e402c8f4e48448",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a046518d21153070da2933d1e987713df0d4a6c3"
-        },
-        "date": 1614731802242,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 67708.91119061003,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000014172850051849595",
-            "extra": "mean: 14.769104722196172 usec\nrounds: 10800"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 149769.0827397106,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001875218616536554",
-            "extra": "mean: 6.676945479715184 usec\nrounds: 62894"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "9bf28fb451a85fd9e9a4f2276c3eebd484e55d02",
           "message": "rename BaggagePropagator to W3CBaggagePropagator (#1663)\n\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
           "timestamp": "2021-03-02T17:05:32-08:00",
@@ -45470,6 +45432,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 3.400482428271593e-7",
             "extra": "mean: 7.701433871707906 usec\nrounds: 48542"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mohanjishnu@gmail.com",
+            "name": "Jishnu Mohan",
+            "username": "JishnuM"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e3ad7e6ae00a9ca3fd7b0bcb45b02efb7bc771cf",
+          "message": "Fix unordered list formatting (#1911)",
+          "timestamp": "2021-06-14T15:28:50-07:00",
+          "tree_id": "d23108fa1ecbf8218f20856d9e4e19793f50dffa",
+          "url": "https://github.com/rnishtala/opentelemetry-python/commit/e3ad7e6ae00a9ca3fd7b0bcb45b02efb7bc771cf"
+        },
+        "date": 1623717798409,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 97566.06909738405,
+            "unit": "iter/sec",
+            "range": "stddev: 5.106740056976793e-7",
+            "extra": "mean: 10.249464893393068 usec\nrounds: 13459"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 159268.92738720207,
+            "unit": "iter/sec",
+            "range": "stddev: 2.6327205526182523e-7",
+            "extra": "mean: 6.2786886080351305 usec\nrounds: 56180"
           }
         ]
       }
