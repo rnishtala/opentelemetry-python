@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1624326419162,
+  "lastUpdate": 1624326434240,
   "repoUrl": "https://github.com/rnishtala/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "lechen@microsoft.com",
-            "name": "Leighton Chen",
-            "username": "lzchen"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "1af9f877794d69d37fa27791baa7bac5bfc51088",
-          "message": "Remove 'span' for jaeger and zipkin exporters (#1664)",
-          "timestamp": "2021-03-04T18:26:30-08:00",
-          "tree_id": "5c6bed47acb71e2c623026fadcb68f1f7ca9137a",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1af9f877794d69d37fa27791baa7bac5bfc51088"
-        },
-        "date": 1614911273585,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2936.1107657022317,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000016880253228171143",
-            "extra": "mean: 340.5866058192901 usec\nrounds: 241"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3965.2983569923153,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009287112351191939",
-            "extra": "mean: 252.18783303824367 usec\nrounds: 6780"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "siimkallas@gmail.com",
             "name": "Siim Kallas",
             "username": "seemk"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.001033981839821525",
             "extra": "mean: 337.96158384788765 usec\nrounds: 4693"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "raj.nishtala@gmail.com",
+            "name": "Raj Nishtala",
+            "username": "rnishtala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a83b6f1d40eb6db45b76d98cfd02742729d17c96",
+          "message": "Issue-1147 Adding description to the environment variables (#1898)",
+          "timestamp": "2021-06-21T08:26:20-07:00",
+          "tree_id": "80df928f1d45cfc3efefb093a3de2b8387110e57",
+          "url": "https://github.com/rnishtala/opentelemetry-python/commit/a83b6f1d40eb6db45b76d98cfd02742729d17c96"
+        },
+        "date": 1624326417379,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2117.148984774129,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000040237030196139935",
+            "extra": "mean: 472.33331579009604 usec\nrounds: 38"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3234.965815556314,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000945453054531877",
+            "extra": "mean: 309.1222773332555 usec\nrounds: 5250"
           }
         ]
       }
