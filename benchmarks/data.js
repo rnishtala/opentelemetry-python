@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1624326539524,
+  "lastUpdate": 1657394882737,
   "repoUrl": "https://github.com/rnishtala/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -63378,6 +63378,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000013891435436787943",
             "extra": "mean: 8.61968403812334 usec\nrounds: 38166"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.10 - sdk": [
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fe26adaa07f88324c933a75f1a4dd199c9c8b2d7",
+          "message": "Fix warning message for OTLP gRPC exporter mixin (#2781)\n\n* Fix warning message for OTLP gRPC exporter mixin\r\n\r\nFixes #2780\r\n\r\n* Refactor export parameter type\r\n\r\n* Add changelog entry\r\n\r\n* Use fixed warning messages for traces and metrics\r\n\r\n* Use subclass-specific error messages\r\n\r\n* Fix test cases\r\n\r\n* Fix lint",
+          "timestamp": "2022-07-07T16:16:57+02:00",
+          "tree_id": "69a4622e8fac38622719520c6ae3eafebfd7f0cc",
+          "url": "https://github.com/rnishtala/opentelemetry-python/commit/fe26adaa07f88324c933a75f1a4dd199c9c8b2d7"
+        },
+        "date": 1657394870731,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28972.364531228774,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014189438223100473",
+            "extra": "mean: 34.51565021288195 usec\nrounds: 4457"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21119.49957293492,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000018647010314259355",
+            "extra": "mean: 47.34960677200518 usec\nrounds: 6645"
           }
         ]
       }
